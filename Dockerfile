@@ -9,5 +9,6 @@ RUN mkdir /opt/ara \
     && chmod -R g+rwX /opt/ara
 WORKDIR /opt/ara
 ADD ansible.cfg /opt/ara/ansible.cfg
+ADD run.sh /opt/ara/
 EXPOSE 9191
-CMD ["/usr/bin/ara-manage", "runserver", "-h", "0.0.0.0"]
+CMD ["/opt/ara/run.sh"]
