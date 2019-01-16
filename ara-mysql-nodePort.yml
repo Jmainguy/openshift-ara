@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ara-mysql
+  labels:
+    name: ara-mysql
+spec:
+  type: NodePort
+  ports:
+    - name: ara-mysql
+      port: 3306
+      targetPort: 3306
+  selector:
+    app: ara-mysql
