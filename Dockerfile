@@ -5,4 +5,4 @@ RUN yum install -y gcc python-devel libffi-devel openssl-devel redhat-rpm-config
 RUN yum install -y python2-pip
 RUN pip install git+https://git.openstack.org/openstack/ara
 EXPOSE 9191
-CMD ["/usr/bin/ara-manage runserver"]
+CMD ["/usr/bin/ara-manage", "runserver"]
