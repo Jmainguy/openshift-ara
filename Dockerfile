@@ -10,4 +10,4 @@ RUN mkdir /opt/ara \
 WORKDIR /opt/ara
 ADD ansible.cfg /opt/ara/ansible.cfg
 EXPOSE 9191
-CMD ["/usr/bin/ara-manage", "runserver"]
+CMD ["/usr/bin/ara-manage", "runserver", "-h", "0.0.0.0"]

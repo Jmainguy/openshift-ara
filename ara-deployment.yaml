@@ -22,7 +22,7 @@ spec:
       containers:
       - env:
         - name: ARA_DATABASE
-          value: "mysql+pymysql://ara:password@ara-mysql.svc:3306/ara"
+          value: "mysql+pymysql://ara:password@ara-mysql.ara.svc:3306/ara"
         image: docker-registry.default.svc:5000/ara/openshift-ara
         imagePullPolicy: Always
         name: openshift-ara
