@@ -5,3 +5,4 @@ oc create -f ara-mysql-deployment.yaml
 oc create -f ara-mysql-nodePort.yml
 oc new-build https://github.com/Jmainguy/openshift-ara
 oc create -f ara-deployment.yaml
+oc create -f ara-svc.yaml

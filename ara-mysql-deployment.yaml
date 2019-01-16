@@ -26,6 +26,12 @@ spec:
           value: password
         - name: MYSQL_USER
           value: ara
+        - name: MYSQL_MAX_ALLOWED_PACKET
+          value: "500M"
+        - name: MYSQL_MAX_CONNECTIONS
+          value: "500"
+        - name: MYSQL_AIO
+          value: "0"
         image: centos/mysql-57-centos7
         imagePullPolicy: Always
         name: mysql
